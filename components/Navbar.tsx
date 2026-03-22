@@ -7,6 +7,8 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Features", href: "#features" },
   { label: "How It Works", href: "#how-it-works" },
+  { label: "Portal", href: "#portal" },
+  { label: "Marketplace", href: "#marketplace" },
   { label: "Testimonials", href: "#testimonials" },
 ];
 
@@ -30,7 +32,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">A</span>
@@ -38,7 +39,6 @@ export default function Navbar() {
             <span className="text-xl font-bold text-slate-900">Apex</span>
           </a>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -57,7 +57,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-slate-700 p-2"
@@ -68,7 +67,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
