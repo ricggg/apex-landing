@@ -6,6 +6,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Portal from "@/components/Portal";
 import Marketplace from "@/components/Marketplace";
 import Stats from "@/components/Stats";
+import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
       <Portal />
       <Marketplace />
       <Stats />
+      <Pricing />
       <Testimonials />
       <CTA />
       <Footer />
